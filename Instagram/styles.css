@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+/*Já deu ruim. De novo. Tá foda .q*/
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh
+}
+/*1. Mexi com os números, mas mesmo assim, nada mudou. Será que estou fazendo algo errado? Provavelmente.*/
+/*2. Aparentemente deu certo. Provavelmente algum problema com os pontos ou traços. Coisa boba :v*/
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+height: 30rem;
+position: relative; left: 70%;
+}
+/*1. Não funcionou .q Continuam com o mesmo tamanho e layout... Talvez eu tenha errado no HTML? Provável.*/
+/*2. Uhh... Consertei uma coisa! Mas continua quebrado.*/
+/*3. Bem, consertei tudo! Tá mais ou menos parecido. Mas tem um problema... Tá horrível de feio. :'v */
+/*4. Fiz o meu melhor no paint (:v), fazer com que a cor de fundo das imagens combine com o fundo do site.*/
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50% ;
+    min-height: 34rem;
+    position: relative; right: 15%;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    padding: 1.3rem, 0;
+    border: 1px solid gray;
+    position: relative; top: 7%;
+}
+
+/*Ajeitei cores e posicionamento, para se encaixar melhor no site. :v ficou bom, mas a cor tá meio ruim.*/
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram_redo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*1. Ué, a imagem não ficou arredondada. Estou fazendo algo errado, provavelmente.*/
+/*2. Ficou arredondada, consegui, mas aparentemente agora Ronaldo tá dentro de um ovo. Perfeito.*/
+
+.profile-photo img{
+    height: 9rem;
+}
+/*De novo, ajeitei a altura para se encaixar melhor.*/
+
+.instagram-login {
+    background-color: #0677c2;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.instagram-logout {
+    color: #0677c2;
+}
+/*Não coloquei margin-top pois acho que dessa forma fica melhor.*/
+
+.not-account {
+    color: rgb(61, 61, 61);
+}
+
+.link-blue {
+    color: #0677c2
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-even;
+    align-items: center;
+    padding: 1rem;
+}
+/*1. Tá chegando. Vamos ver se vai ter problema com o tamanho dos botões.*/
+/*2. Eu estava certo :v sabe-se lá aonde está o botão do google play kkjjkjjkk.*/
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    position: relative; left: 26%;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./Imagens/appstore.jpg');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./Imagens/googleplay.png')
+}
+
+/*Não estou conseguindo separar os botões .q Estão muito juntinhos.*/
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .download {
+        position: relative; right: 20%;
+    }
+}
+
+@media(max-width: 660px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+    
+    .instagram-phone {
+        display: none;
+    }
+    
+    .instagram-continue {
+        width: 100%;
+    }
+    .download {
+        position: relative; right: 20%;
+    }
+}
+/*Editei a classe "download", para efeito estético, quando chegasse em mobile. Tá melhor agora, eu acredito.*/
+/*Acho que ficou bom, para meu primeiro projeto. u.u falta muito ainda, mas por agora... Estou satisfeito.*/
